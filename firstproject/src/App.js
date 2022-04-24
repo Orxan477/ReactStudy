@@ -7,6 +7,7 @@ import alertify from "alertifyjs";
 import { Route, Switch } from "react-router-dom";
 import NotFound from "./NotFound";
 import CardLList from "./CardList";
+import FormDemo1 from "./FormDemo1";
 
 export default class App extends Component {
   state = { currentCategory: "", products: [], cart: [] };
@@ -95,6 +96,7 @@ export default class App extends Component {
                   )}
                 ></Route>
                 <Route exact path="/cart" component={CardLList}></Route>
+                <Route exact path="/form1" component={FormDemo1}></Route>
                 <Route component={NotFound}></Route>
               </Switch>
             </Col>

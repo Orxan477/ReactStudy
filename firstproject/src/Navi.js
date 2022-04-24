@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import {
   Navbar,
   NavbarBrand,
@@ -32,9 +33,9 @@ export default class Navi extends Component {
           <NavbarToggler onClick={function noRefCheck() {}} />
           <Collapse navbar>
             <Nav className="me-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
+              <Link>
+                <Link to="/form1/">Form Demo 1</Link>
+              </Link>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">
                   GitHub
